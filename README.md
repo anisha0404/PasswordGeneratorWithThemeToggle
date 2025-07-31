@@ -1,12 +1,52 @@
-# React + Vite
+````markdown
+🔐 Password Generator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and modern **Password Generator** built with **React** and styled using **Tailwind CSS**.  
+It includes smart features like clipboard copying with pop-up feedback, theme toggling (light/dark), and customization of password strength.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨Theme Toggle: Switch between light and dark mode with a smooth toggle switch.
+- 🔑Password Generator: Generate secure passwords of variable length with optional inclusion of:
+  - Numbers (`0-9`)
+  - Special characters (`!@#$%^&*()_+...`)
+- 📋Copy to Clipboard: Click the **COPY** button to instantly copy the generated password.
+- ✅Pop-up Notification: A floating **"Copied to clipboard!"** message appears for 2 seconds after copying.
+- ⚛️React Hooks Used:
+  - `useState`: Manages input states (password length, toggle states, copied flag, theme).
+  - `useEffect`: Triggers password generation when inputs change.
+  - `useCallback`: Optimizes password generation and clipboard copy logic.
+  - `useRef`: Directly accesses the password input for clipboard operations.
 
-## Expanding the ESLint configuration
+📸 Screenshot
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![App Screenshot](public/Screenshots/Screenshot%202025-07-31%20222952.png)
+
+🧠 Hooks Summary
+
+| Hook       | Purpose                                                                 |
+|------------|-------------------------------------------------------------------------|
+| `useState` | To hold and update UI data like password, length, toggle switches etc. |
+| `useEffect`| Auto-generates password when dependencies (inputs) change.             |
+| `useCallback`| Memoizes password generation and copy functions to avoid re-renders. |
+| `useRef`   | Accesses the password input field for clipboard copying.               |
+
+🛠️ Getting Started
+````
+ 1. Clone the repo
+```bash
+git clone https://github.com/anisha0404/PasswordGeneratorwithThemeToggle.git
+cd PasswordGeneratorWithThemeToggle
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
