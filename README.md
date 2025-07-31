@@ -20,7 +20,7 @@ It includes smart features like clipboard copying with pop-up feedback, theme to
 
 📸 Screenshot
 
-![App Screenshot](public/Screenshots/ss1.png)
+![App Screenshot](./public/Screenshots/ss1.png)
 
 🧠 Hooks Summary
 
